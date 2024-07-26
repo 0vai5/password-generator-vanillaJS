@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, 'sans serif';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container{
+    background-color: #a79f9f;
+    height: 100vh;
+}
+
+.header{
+    background-color: #f0f0f0;
+    padding: 0.8rem 1.3rem;
+}
+
+.footer{
+    background-color: #f0f0f0;
+    padding: 0.8rem 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.fLeft {
+    padding-right: 0.5rem;
+}
+
+.fRight {
+    padding-left: 0.5rem;
+}
+
+.footer .fRight a{
+    text-decoration: none;
+}
+
+.footer .fLeft a{
+    text-decoration: none;
+}
+
+.inputContainer{
+    margin: 5rem auto 2rem auto;
+    padding: 1.3rem 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    background-color: rgb(207, 179, 179);
+}
+
+.inputContainer .label{
+    padding: 0 2rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputContainer .input {
+    width: 50% !important;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainer .input input {
+    width: 100%;
+}
+
+.inputContainer button{
+    padding: 10px 12px;
+    border-radius: 3px;
+    border: none;
+    font-size: 1rem;
+}
+
+.inputContainer button:hover{
+    background-color: #eee8e8;
+}
+
+.outputContainer{
+    text-align: center;
+    display: none;
+}
+
+.outputContainer h1{
+    font-weight: 900 !important;
+}
+
+.outputContainer p {
+    font-size: 1.3rem;
+}
+
+
+
+@media (max-width: 680px) {
+    .inputContainer{
+        width: 80%;
+    }
+
+    .inputContainer .label{
+        width: 80%;
+        gap: 20px;
+    }
+
+    .inputContainer .input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .inputContainer {
+        width: 80%;
+    }
+
+    .inputContainer .label{
+        width: 80%;
+    }
+
+    .inputContainer .input {
+        width: 80%;
+    }
+}
+
+
